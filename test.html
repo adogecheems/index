@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #fff; /* 默认背景色 */
+      color: #000; /* 默认文字颜色 */
+    }
+    .dark-mode body {
+      background-color: #333; /* 夜间模式背景色 */
+      color: #fff; /* 夜间模式文字颜色 */
+    }
+  </style>
+  <title>夜间模式切换</title>
+</head>
+<body>
+  <h1>这是一个切换夜间模式的按钮示例</h1>
+  <button onclick="toggleDarkMode()">切换夜间模式</button>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
