@@ -399,3 +399,26 @@
 					});
 
 })(jQuery);
+
+var light_mode = true;
+document.getElementById("switch").addEventListener("click", function() {
+	if (light_mode){
+		document.querySelector('html').style.setProperty('--article-color', 'rgba(27, 31, 34, 0.8)');
+		document.querySelector('html').style.setProperty('--bg-color', '#1b1f22');
+		document.querySelector('html').style.setProperty('--font-color', '#ffffff');
+		document.querySelector('html').style.setProperty('--button-hover', 'rgba(255, 255, 255, 0.075)');
+		document.querySelector('html').style.setProperty('--button-active', 'rgba(255, 255, 255, 0.175)');
+		document.querySelector('html').style.setProperty('--bg', 'linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5))');
+		document.querySelector('html').style.setProperty('--img-mask', 'rgba(19, 21, 25, 0.5)');
+		light_mode = false;
+	}else{
+		document.querySelector('html').style.setProperty('--article-color', 'rgba(255, 255, 255, 0.6)');
+		document.querySelector('html').style.setProperty('--bg-color', '#ffffff');
+		document.querySelector('html').style.setProperty('--font-color', '#434b4d');
+		document.querySelector('html').style.setProperty('--button-hover', 'rgba(255, 158, 189, 0.075)');
+		document.querySelector('html').style.setProperty('--button-active', 'rgba(255, 158, 189, 0.175)');
+		document.querySelector('html').style.setProperty('--bg', 'linear-gradient(to top, rgba(255, 158, 189, 0.7), 19%, rgba(255, 255, 255, 0.9))');
+		document.querySelector('html').style.setProperty('--img-mask', 'transparent');
+		light_mode = true;
+	}
+});
