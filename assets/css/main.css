@@ -148,13 +148,13 @@ a {
 	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-	border-bottom: dotted 2px var(--font-color);
+	border-bottom: dotted 2px transparent;
 	text-decoration: none;
 	color: inherit;
 }
 
 	a:hover {
-		border-bottom-color: transparent;
+		border-bottom-color: var(--font-color);
 	}
 
 strong, b {
@@ -1637,10 +1637,17 @@ body.is-preload #header {
 
 	#footer .copyright {
 		letter-spacing: 0.2rem;
-		font-size: 0.6rem;
+		font-size: 0.7rem;
 		opacity: 0.75;
 		margin-bottom: 0;
 		text-transform: uppercase;
+		vertical-align: middle;
+	}
+	#footer .icp-icon{
+	    padding: 0 4px;
+		max-height: 1.4rem;
+		width: auto;
+		vertical-align: text-bottom;
 	}
 
 body.is-article-visible #footer {
