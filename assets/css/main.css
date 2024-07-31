@@ -1155,7 +1155,7 @@ button {
 	}
 
 	#bg:after {
-		background-image: url("https://t.mwm.moe/moe");
+		background-image: url("https://cdn.mmoe.work/img/back.webp");
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -1172,7 +1172,7 @@ button {
 
 @media all and (orientation : portrait) {
 	#bg:after {
-		background-image: url("https://t.mwm.moe/moemp");
+		background-image: url("https://cdn.mmoe.work/img/mback.webp");
 	}
 }
 
