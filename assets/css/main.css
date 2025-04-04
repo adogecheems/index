@@ -247,7 +247,7 @@ a {
 	-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-	border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+	border-bottom: dotted 1px var(--font-color);
 	text-decoration: none;
 	color: inherit;
 }
@@ -1759,15 +1759,15 @@ body.is-preload #header .content .inner {
 }
 
 #footer .icp-icon:before {
-    content: '';
-    display: inline-block;
-    background-image: url('../moe.webp');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 1.4rem;
-    height: 1.4rem; 
-    vertical-align: middle;
+	content: '';
+	display: inline-block;
+	background-image: url('../moe.webp');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 1.4rem;
+	height: 1.4rem;
+	vertical-align: middle;
 }
 
 body.is-article-visible #footer {
@@ -1783,5 +1783,63 @@ body.is-article-visible #footer {
 }
 
 body.is-preload #footer {
+	opacity: 0;
+}
+
+/* Theme */
+
+#switch {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4rem;
+	height: 4rem;
+	cursor: pointer;
+}
+
+#switch:before {
+	-moz-transition: background-color 0.2s ease-in-out, -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out, -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out, -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+	transition: background-color 0.2s ease-in-out, transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0.75rem;
+	left: 0.75rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 100%;
+	background-position: center;
+	background-image: var(--switch-icon);
+	background-size: 30px 30px;
+	background-repeat: no-repeat;
+	z-index: 3;
+}
+
+@media screen and (min-width: 736px) {
+	#switch:hover:before {
+		background-color: var(--button-hover);
+	}
+
+	#switch:active:before {
+		background-color: var(--button-active);
+	}
+}
+
+body.is-article-visible #switch:before {
+	-moz-transform: scale(0.95);
+	-webkit-transform: scale(0.95);
+	-ms-transform: scale(0.95);
+	transform: scale(0.95);
+	-moz-filter: blur(0.1rem);
+	-webkit-filter: blur(0.1rem);
+	-ms-filter: blur(0.1rem);
+	filter: blur(0.1rem);
+	opacity: 0;
+}
+
+body.is-preload #switch {
 	opacity: 0;
 }
