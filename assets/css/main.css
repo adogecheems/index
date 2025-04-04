@@ -1758,6 +1758,18 @@ body.is-preload #header .content .inner {
 	text-transform: uppercase;
 }
 
+#footer .icp-icon:before {
+    content: '';
+    display: inline-block;
+    background-image: url('../moe.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1.4rem;
+    height: 1.4rem; 
+    vertical-align: middle;
+}
+
 body.is-article-visible #footer {
 	-moz-transform: scale(0.95);
 	-webkit-transform: scale(0.95);
