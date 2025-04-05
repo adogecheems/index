@@ -236,7 +236,7 @@ input,
 select,
 textarea {
 	color: var(--font-color);
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: sans-serif;
 	font-weight: 300;
 	font-size: 1rem;
 	line-height: 1.65;
@@ -1277,7 +1277,7 @@ button {
 	-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 	-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-	background-image: url("../../images/back.jpg");
+	background-image: url("../../images/background.webp");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;

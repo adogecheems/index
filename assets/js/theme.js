@@ -10,23 +10,23 @@ const THEME_CONFIG = {
 	},
 	light: {
 		articleColor: 'rgba(255, 255, 255, 0.6)',
-		bgColor: '#ffffff', 
+		bgColor: '#ffffff',
 		fontColor: '#434b4d',
-		buttonHover: 'rgba(255, 158, 189, 0.075)',
-		buttonActive: 'rgba(255, 158, 189, 0.175)',
-		bgMask: 'linear-gradient(to top, rgba(255, 158, 189, 0.8), 19%, rgba(255, 255, 255, 0.8))',
+		buttonHover: 'rgba(255, 152, 169, 0.075)',
+		buttonActive: 'rgba(255, 152, 169, 0.175)',
+		bgMask: 'linear-gradient(to top, rgba(	255, 152, 169, 0.8), 19%, rgba(255, 255, 255, 0.8))',
 		imgMask: 'transparent',
 	}
 };
 
 function camelToKebab(str) {
-    return str.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase();
+	return str.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase();
 }
 
 function setTheme(theme) {
 	const html = document.documentElement;
 	const config = THEME_CONFIG[theme];
-	
+
 	Object.entries(config).forEach(([key, value]) => {
 		html.style.setProperty(`--${camelToKebab(key)}`, value);
 	});
