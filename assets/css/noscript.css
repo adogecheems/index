@@ -5,6 +5,18 @@
 */
 
 /*Theme*/
+
+html {
+	--article-color: rgba(255, 255, 255, 0.6);
+	--bg-color: #ff98a9;
+	--bg-preload-color: #ffffff;
+	--font-color: #434b4d;
+	--button-hover: rgba(255, 152, 169, 0.075);
+	--button-active: rgba(255, 152, 169, 0.175);
+	--bg-mask: linear-gradient(to top, rgba(255, 152, 169, 0.8), 19%, rgba(255, 255, 255, 0.8));
+	--img-mask: transparent;
+}
+
 /* BG */
 
 body.is-preload #bg:before {
