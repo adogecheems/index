@@ -373,7 +373,7 @@ blockquote {
 }
 
 code {
-	background: var(--button-hover);
+	background: var(--inactive-white);
 	border-radius: 4px;
 	font-family: "Courier New", monospace;
 	font-size: 0.9rem;
@@ -538,7 +538,7 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 select:focus,
 textarea:focus {
-	background: var(--button-hover);
+	background: var(--inactive-white);
 	border-color: var(--font-color);
 	box-shadow: 0 0 0 1px var(--font-color);
 }
@@ -652,7 +652,7 @@ input[type="radio"]:checked+label:before {
 
 input[type="checkbox"]:focus+label:before,
 input[type="radio"]:focus+label:before {
-	background: var(--button-hover);
+	background: var(--inactive-white);
 	border-color: var(--font-color);
 	box-shadow: 0 0 0 1px var(--font-color);
 }
@@ -1035,11 +1035,11 @@ ul.icons li a {
 }
 
 ul.icons li a:hover {
-	background-color: var(--button-hover);
+	background-color: var(--inactive-white);
 }
 
 ul.icons li a:active {
-	background-color: var(--button-active);
+	background-color: var(--active-white);
 }
 
 /* Table */
@@ -1061,7 +1061,7 @@ table tbody tr {
 }
 
 table tbody tr:nth-child(2n + 1) {
-	background-color: var(--button-hover);
+	background-color: var(--inactive-white);
 }
 
 table td {
@@ -1150,7 +1150,7 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-	background-color: var(--button-hover);
+	background-color: var(--inactive-white);
 }
 
 input[type="submit"]:active,
@@ -1158,7 +1158,7 @@ input[type="reset"]:active,
 input[type="button"]:active,
 button:active,
 .button:active {
-	background-color: var(--button-active);
+	background-color: var(--active-white);
 }
 
 input[type="submit"].icon:before,
@@ -1483,11 +1483,11 @@ body.is-preload #bg:before {
 }
 
 #header nav ul li a:hover {
-	background-color: var(--button-hover);
+	background-color: var(--inactive-white);
 }
 
 #header nav ul li a:active {
-	background-color: var(--button-active);
+	background-color: var(--active-white);
 }
 
 #header nav.use-middle:after {
@@ -1706,11 +1706,11 @@ body.is-preload #header .content .inner {
 }
 
 #main article .close:hover:before {
-	background-color: var(--button-hover);
+	background-color: var(--inactive-white);
 }
 
 #main article .close:active:before {
-	background-color: var(--button-active);
+	background-color: var(--active-white);
 }
 
 @media screen and (max-width: 736px) {
@@ -1820,11 +1820,11 @@ body.is-preload #footer {
 
 @media screen and (min-width: 736px) {
 	#switch:hover:before {
-		background-color: var(--button-hover);
+		background-color: var(--inactive-white);
 	}
 
 	#switch:active:before {
-		background-color: var(--button-active);
+		background-color: var(--active-white);
 	}
 }
 

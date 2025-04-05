@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const observer = new MutationObserver(function(mutations) {
-        mutations.forEach(function(mutation) {
+document.addEventListener('DOMContentLoaded', function () {
+    const observer = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
             if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
                 if (!document.body.classList.contains('is-preload')) {
                     const fontLink = document.createElement('link');
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     fontLink.onload = function () {
                         document.body.style.fontFamily = "'LXGW WenKai', sans-serif";
                     };
-                    
+
                     observer.disconnect();
                 }
             }
