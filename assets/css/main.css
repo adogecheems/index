@@ -1296,7 +1296,7 @@ body.is-article-visible #bg:after {
 }
 
 body.is-preload #bg:before {
-	background-color: var(--bg-preload-color);
+	background-color: var(--bg-color);
 }
 
 /* Wrapper */

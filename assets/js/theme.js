@@ -2,7 +2,6 @@ const THEME_CONFIG = {
 	dark: {
 		articleColor: 'rgba(27, 31, 34, 0.8)',
 		bgColor: '#1b1f22',
-		bgPreloadColor: '#000000',
 		fontColor: '#ffffff',
 		buttonHover: 'rgba(255, 255, 255, 0.075)',
 		buttonActive: 'rgba(255, 255, 255, 0.175)',
@@ -11,7 +10,6 @@ const THEME_CONFIG = {
 	},
 	light: {
 		articleColor: 'rgba(255, 255, 255, 0.6)',
-		bgColor: '#ff98a9',
 		bgPreloadColor: '#ffffff',
 		fontColor: '#434b4d',
 		buttonHover: 'rgba(255, 152, 169, 0.075)',
