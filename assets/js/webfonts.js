@@ -12,14 +12,12 @@ document.addEventListener('DOMContentLoaded', function() {
                         document.body.style.fontFamily = "'LXGW WenKai', sans-serif";
                     };
                     
-                    // Stop observing once font is loaded
                     observer.disconnect();
                 }
             }
         });
     });
 
-    // Start observing the body element for class changes
     observer.observe(document.body, {
         attributes: true,
         attributeFilter: ['class']
