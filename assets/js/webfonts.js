@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
                 if (!document.body.classList.contains('is-preload')) {
                     const fontLink = document.createElement('link');
-                    fontLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/lxgw-wenkai-webfont/1.7.0/lxgwwenkai-regular.min.css';
+                    fontLink.href = 'https://npm.elemecdn.com/lxgw-wenkai-webfont@1/lxgwwenkai-regular.css';
                     fontLink.rel = 'stylesheet';
                     document.head.appendChild(fontLink);
 
