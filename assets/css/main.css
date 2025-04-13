@@ -1,4 +1,5 @@
-@import url("https://npm.elemecdn.com/@fortawesome/fontawesome-free@6.4.0/css/all.min.css");
+@import url("https://s4.zstatic.net/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+@import url("https://s4.zstatic.net/ajax/libs/lxgw-wenkai-webfont/1.7.0/lxgwwenkai-regular.min.css");
 
 /*
 	Dimension by HTML5 UP
@@ -236,7 +237,7 @@ input,
 select,
 textarea {
 	color: var(--font-color);
-	font-family: sans-serif;
+	font-family: "LXGW WenKai", sans-serif;
 	font-weight: 300;
 	font-size: 1rem;
 	line-height: 1.65;
@@ -1277,7 +1278,7 @@ button {
 	-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 	-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-	background-image: url("https://s2.loli.net/2025/04/05/7xf5u8YzNar4qoS.webp");
+	background-image: url("https://cdn.mmoe.work/mmoe/background.webp");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;

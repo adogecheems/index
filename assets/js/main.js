@@ -398,4 +398,10 @@
 			$main._show(location.hash.substr(1), true);
 		});
 
+	setTimeout(function () {
+		if ($body.hasClass('is-preload')) {
+			$body.removeClass('is-preload');
+		}
+	}, 3000);
+
 })(jQuery);
