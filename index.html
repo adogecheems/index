@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="zh-CN">
 
 <head>
 	<title>Adogecheems小屋</title>
@@ -12,7 +12,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="icon" href="assets/icon.webp" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="preload" href="https://cdn.mmoe.work/mmoe/background.webp" as="image" fetchpriority="high" />
 	<script src="assets/js/theme.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			document.getElementById('bg-img').addEventListener('load', () => {
+				window.setTimeout(() => {
+					document.body.classList.remove('is-preload');
+					document.getElementById('bg-img').style.opacity = 1;
+				}, 100);
+			});
+
+			window.setTimeout(() => {
+				window.setTimeout(() => {
+					document.body.classList.remove('is-preload');
+				}, 100);
+			}, 2000);
+		});
+	</script>
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -31,10 +48,14 @@
 			<div class="content">
 				<div class="inner">
 					<h1>你来到了互联网的边缘！</h1>
-					<p>如你所见，这是一个网络上的边远之地，如果你有闲心来听听我的碎碎念，那就请务必务必多待一会叭！当然如果你现在就要走，那我也是没有办法的啦...可以通过
-						<a href="mailto:adogecheems@outlook.com" target="_blank">adogecheems@outlook.com</a>联系我哦
+					<p>
+						如你所见，这是一个网络上的边远之地，如果你有闲心来听听我的碎碎念，那就请务必务必多待一会叭！
+						当然如果你现在就要走，那我也是没有办法的啦...可以通过
+						<a href="mailto:adogecheems@outlook.com" target="_blank">adogecheems@outlook.com</a>联系我哦。
 					</p>
-					<p>我嘛，也就是普通的高中牲一只，要是您能光顾我的那些小破站，那cheems会不胜感激哦(*^▽^*)</p>
+					<p>
+						我嘛，也就是普通的高中牲一只，要是您能光顾我的那些小破站，那cheems会不胜感激哦(*^▽^*)。
+					</p>
 				</div>
 			</div>
 			<nav>
@@ -56,12 +77,14 @@
 				<span class="image main">
 					<img src="https://cdn.mmoe.work/mmoe/background.webp" alt="我超喜欢这张图的" />
 				</span>
-				<p>嗯哼~既然你诚心诚意地发问了，那么我只好告诉你，关于我并没有什么好值得一提的[doge]<br>
-					如你所见，我真的很闲，会费心在这个互联网的犄角旮旯上（大概率没有人看到我的碎碎念），不过我还是要做，因为忍不住...<br>
-					作为一个普通的高中牲，我想过要干很多事情，但最后都只是学会了"要多想"...不过终日幻想是一种能力捏！<br>
+				<p>
+					嗯哼~既然你诚心诚意地发问了，那么我只好告诉你，关于我并没有什么好值得一提的[doge]。<br />
+					如你所见，我真的很闲，会费心在这个互联网的犄角旮旯上（大概率没有人看到我的碎碎念），不过我还是要做，因为忍不住...<br />
+					作为一个普通的高中牲，我想过要干很多事情，但最后都只是学会了"要多想"...不过终日幻想是一种能力捏！<br />
 					我也曾幻想过要做一个"有趣的人"，但我发现这实在是太难了...
 				</p>
-				<p>不过，既然你来到了这个边远之地，那么说明肯定有一种非同一般的缘分在其中！（｡ò ∀ ó｡）<br>
+				<p>
+					不过，既然你来到了这个边远之地，那么说明肯定有一种非同一般的缘分在其中！（｡ò ∀ ó｡）<br />
 					好吧，虽然我想摆脱我死宅的身份，但想了想，好像根本没有什么拿的出手的社交平台账户可供展览，只能继续远离现充生活力...
 				</p>
 			</article>
@@ -69,18 +92,30 @@
 			<!-- Website -->
 			<article id="website">
 				<h2 class="major">站点</h2>
+
 				<h3><a href="#" target="_blank">主页</a></h3>
-				<span class="image main"><img src="https://cdn.mmoe.work/mmoe/index.webp" alt="" /></span>
-				<p>嗯哼，就是我的这个主页（你水的能不能不那么明显啊喂！）</p>
-				<p>好吧，其实制作这个网站也是费了我一番心力的。你看到的猛男粉可是我一点点配出来的（奇怪的癖好）</p>
+				<span class="image main">
+					<img src="https://cdn.mmoe.work/mmoe/index.webp" loading="lazy" alt="主页" />
+				</span>
+				<p>嗯哼，就是我的这个主页（你水的能不能不那么明显啊喂！）。</p>
+				<p>好吧，其实制作这个网站也是费了我一番心力的。你看到的猛男粉可是我一点点配出来的（奇怪的癖好）。</p>
+
 				<h3><a href="https://blog.mmoe.work" target="_blank">博客</a></h3>
-				<span class="image main"><img src="https://cdn.mmoe.work/mmoe/blog.webp" alt="" /></span>
-				<p>发疯时间到！有闲心可以来看看的！（好像有些时日没更了呐）</p>
+				<span class="image main">
+					<img src="https://cdn.mmoe.work/mmoe/blog.webp" loading="lazy" alt="博客" />
+				</span>
+				<p>发疯时间到！有闲心可以来看看的！（好像有些时日没更了呐）。</p>
+
 				<h3><a href="https://alist.mmoe.work" target="_blank">网盘</a></h3>
-				<span class="image main"><img src="https://cdn.mmoe.work/mmoe/alist.webp" alt="" /></span>
+				<span class="image main">
+					<img src="https://cdn.mmoe.work/mmoe/alist.webp" loading="lazy" alt="网盘" />
+				</span>
 				<p>随便传点东西就好了...我不会删的......</p>
+
 				<h3><a href="https://miku.mmoe.work" target="_blank">自建Mikutap</a></h3>
-				<span class="image main"><img src="https://cdn.mmoe.work/mmoe/mikutap.webp" alt="" /></span>
+				<span class="image main">
+					<img src="https://cdn.mmoe.work/mmoe/mikutap.webp" loading="lazy" alt="Mikutap" />
+				</span>
 				<p>让你快速发癫...</p>
 			</article>
 
@@ -90,16 +125,20 @@
 				<p>孝感高中普通学生党一枚~</p>
 				<ul>
 					<li>自我介绍中分享的图片是<b><a href="https://www.pixiv.net/users/6900078"
-								target="_blank">Aliter</a></b>(pid6900078)的作品</li>
-					<li>由<b><a href="https://html5up.net" target="_blank">html5up</a></b>与<b>Adogecheems</b>设计</li>
-					<li>感谢<b><a href="https://t.alcy.cc" target="_blank">次元API</a></b>提供优质的二次元风格插图API</li>
+								target="_blank">Aliter</a></b>(pid6900078)的作品。</li>
+					<li>由<b><a href="https://html5up.net" target="_blank">html5up</a></b>与<b>Adogecheems</b>设计。</li>
+					<li>感谢<b><a href="https://t.alcy.cc" target="_blank">次元API</a></b>提供优质的二次元风格插图API。</li>
 				</ul>
-				<p>网站的源码存放于<a href="https://github.com/adogecheems/index" target="_blank">此存储库</a><br>
+				<p>
+					网站的源码存放于<a href="https://github.com/adogecheems/index" target="_blank">此存储库</a>。<br />
 					Creative Commons Attribution 3.0 Unported.
 				</p>
 				<ul class="icons">
-					<li><a href="https://github.com/adogecheems" class="icon brands fa-github" target="_blank">
-							<span class="label">Github</span></a></li>
+					<li>
+						<a href="https://github.com/adogecheems" class="icon brands fa-github" target="_blank">
+							<span class="label">Github</span>
+						</a>
+					</li>
 				</ul>
 			</article>
 
@@ -107,8 +146,12 @@
 
 		<!-- Footer -->
 		<footer id="footer">
-			<p class="copyright">&copy; Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a>.</p>
-			<p class="copyright">&copy; Adogecheems.</p>
+			<p class="copyright">
+				&copy; Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a>.
+			</p>
+			<p class="copyright">
+				&copy; Adogecheems.
+			</p>
 			<p class="copyright icp-icon">
 				<a href="https://icp.gov.moe/?keyword=20246699" target="_blank">萌ICP备<b>20246699</b>号</a>
 			</p>
@@ -116,21 +159,27 @@
 
 	</div>
 
-	<!-- BG -->
-	<div id="bg"></div>
+	<!-- Background -->
+	<div id="bg">
+		<img id="bg-img" src="https://cdn.mmoe.work/mmoe/background.webp" loading="eager" alt="背景" />
+	</div>
 
-	<!-- Theme -->
+	<!-- Theme Switch -->
 	<div id="switch"></div>
 
 	<!-- Scripts -->
-	<script src="https://s4.zstatic.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://s4.zstatic.net/ajax/libs/jquery/3.6.0/jquery.min.js" defer onerror="loadJQ"></script>
 	<script>
-		window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')
+		function loadJQ() {
+			let script = document.createElement('script');
+			script.src = "assets/js/jquery.min.js";
+			document.head.appendChild(script);
+		}
 	</script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+	<script src="assets/js/browser.min.js" defer></script>
+	<script src="assets/js/breakpoints.min.js" defer></script>
+	<script src="assets/js/util.js" defer></script>
+	<script src="assets/js/main.js" defer></script>
 
 </body>
 

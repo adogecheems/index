@@ -1,7 +1,7 @@
 const THEME_CONFIG = {
     dark: {
         articleColor: 'rgba(27, 31, 34, 0.8)',
-        bgColor: '#1b1f22',
+        bg: '#1b1f22',
         fontColor: '#ffffff',
         inactiveWhite: 'rgba(255, 255, 255, 0.075)',
         activeWhite: 'rgba(255, 255, 255, 0.175)',

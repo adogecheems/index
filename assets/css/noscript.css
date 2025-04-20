@@ -8,8 +8,7 @@
 
 html {
 	--article-color: rgba(255, 255, 255, 0.6);
-	--bg-color: #ff98a9;
-	--bg-preload-color: #ffffff;
+	--bg-color: #ffffff;
 	--font-color: #434b4d;
 	--inactive-white: rgba(255, 152, 169, 0.075);
 	--active-white: rgba(255, 152, 169, 0.175);
@@ -19,8 +18,12 @@ html {
 
 /* BG */
 
-body.is-preload #bg:before {
+body.is-preload #bg-img {
 	background-color: transparent;
+}
+
+body #bg-img {
+	opacity: 1 !important;
 }
 
 /* Header */
