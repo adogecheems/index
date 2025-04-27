@@ -10,8 +10,8 @@ html {
 	--article-color: rgba(255, 255, 255, 0.6);
 	--bg-color: #ffffff;
 	--font-color: #434b4d;
-	--inactive-white: rgba(255, 152, 169, 0.075);
-	--active-white: rgba(255, 152, 169, 0.175);
+	--inactive-white: rgba(255, 152, 169, 0.125);
+	--active-white: rgba(255, 152, 169, 0.225);
 	--bg-mask: linear-gradient(to top, rgba(255, 152, 169, 0.8), 19%, rgba(255, 255, 255, 0.8));
 	--img-mask: transparent;
 }
