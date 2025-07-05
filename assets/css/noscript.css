@@ -7,8 +7,8 @@
 /*Theme*/
 
 html {
-	--article-color: rgba(255, 255, 255, 0.6);
-	--bg-color: #ffffff;
+	--article-bg-color: rgba(255, 255, 255, 0.6);
+	--main-color: #ffffff;
 	--font-color: #434b4d;
 	--inactive-white: rgba(255, 152, 169, 0.125);
 	--active-white: rgba(255, 152, 169, 0.225);
@@ -18,7 +18,7 @@ html {
 
 /* BG */
 
-body.is-preload #bg-img {
+body.is-preload #bg-mask {
 	background-color: transparent;
 }
 

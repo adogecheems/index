@@ -9,7 +9,7 @@
 <head>
 	<title>Adogecheems小屋</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" />
 	<link rel="icon" href="assets/icon.webp" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="preload" href="https://cdn.mmoe.work/mmoe/background.webp" as="image" fetchpriority="high" />
@@ -17,17 +17,12 @@
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
 			const bgImg = document.getElementById('bg-img');
-			bgImg.addEventListener('load', () => {
-				document.body.classList.remove('is-preload');
-				bgImg.style.opacity = 1;
-			});
-			if (bgImg.complete) {
+			const show = () => {
 				document.body.classList.remove('is-preload');
 				bgImg.style.opacity = 1;
 			};
-			setTimeout(() => {
-				document.body.classList.remove('is-preload');
-			}, 2000);
+			bgImg.complete ? show() : bgImg.addEventListener('load', show);
+			setTimeout(() => document.body.classList.remove('is-preload'), 2000);
 		});
 	</script>
 	<noscript>
@@ -160,22 +155,14 @@
 	</div>
 
 	<!-- Background -->
-	<div id="bg">
-		<img id="bg-img" src="https://cdn.mmoe.work/mmoe/background.webp" loading="eager" alt="背景" />
-	</div>
+	<div id="bg-mask"></div>
+	<img id="bg-img" src="https://cdn.mmoe.work/mmoe/background.webp" loading="eager" />
 
-	<!-- Theme Switch -->
-	<div id="switch"></div>
+	<!-- Theme Toggle -->
+	<div id="toggle"></div>
 
 	<!-- Scripts -->
-	<script src="https://s4.zstatic.net/ajax/libs/jquery/3.6.0/jquery.min.js" defer onerror="loadJQ"></script>
-	<script>
-		function loadJQ() {
-			let script = document.createElement('script');
-			script.src = "assets/js/jquery.min.js";
-			document.head.appendChild(script);
-		}
-	</script>
+	<script src="https://s4.zstatic.net/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
 	<script src="assets/js/browser.min.js" defer></script>
 	<script src="assets/js/breakpoints.min.js" defer></script>
 	<script src="assets/js/util.js" defer></script>
