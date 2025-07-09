@@ -6,16 +6,16 @@ const THEME_CONFIG = {
         inactiveWhite: 'rgba(255, 255, 255, 0.075)',
         activeWhite: 'rgba(255, 255, 255, 0.175)',
         bgMask: 'linear-gradient(rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5))',
-        imgMask: 'rgba(19, 21, 25, 0.5)',
+        imgMask: 'rgba(19, 21, 25, 0.5)'
     },
     light: {
         articleBgColor: 'rgba(255, 255, 255, 0.6)',
         mainColor: '#ffffff',
         fontColor: '#434b4d',
-        inactiveWhite: 'rgba(255, 152, 169, 0.125)',
-        activeWhite: 'rgba(255, 152, 169, 0.225)',
-        bgMask: 'linear-gradient(to top, rgba(	255, 152, 169, 0.8), 19%, rgba(255, 255, 255, 0.8))',
-        imgMask: 'transparent',
+        inactiveWhite: 'rgba(255, 143, 158, 0.125)',
+        activeWhite: 'rgba(255, 143, 158, 0.225)',
+        bgMask: 'linear-gradient(to top, rgba(	255, 143, 158, 0.8), 19%, rgba(255, 255, 255, 0.8))',
+        imgMask: 'transparent'
     }
 };
 
