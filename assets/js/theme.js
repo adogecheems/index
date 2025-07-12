@@ -14,7 +14,7 @@ const THEME_CONFIG = {
         fontColor: '#434b4d',
         inactiveWhite: 'rgba(255, 143, 158, 0.125)',
         activeWhite: 'rgba(255, 143, 158, 0.225)',
-        bgMask: 'linear-gradient(to top, rgba(	255, 143, 158, 0.8), 38%, rgba(255, 255, 255, 0.8))',
+        bgMask: 'linear-gradient(to top, gba(255, 143, 158, 0.78), 16%, gba(255, 255, 255, 0.78), 84%, gba(255, 143, 158, 0.42))',
         imgMask: 'transparent'
     }
 };
